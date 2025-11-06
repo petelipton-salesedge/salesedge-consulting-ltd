@@ -48,13 +48,13 @@ const stats = [
 
 const Achievements = () => {
   return (
-    <section id="achievements" className="py-24 px-4 bg-gradient-to-b from-secondary/20 to-background">
+    <section id="achievements" className="py-12 px-4 bg-secondary/30">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+        <div className="text-center mb-12 animate-fade-in">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-foreground">
             Key Achievements
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Proven track record of driving exceptional results and delivering measurable growth
           </p>
         </div>
@@ -65,18 +65,18 @@ const Achievements = () => {
             return (
               <Card 
                 key={index} 
-                className="group hover:shadow-xl hover:scale-105 transition-all duration-300 border-2 hover:border-accent/50 bg-card/50 backdrop-blur"
+                className="group hover:shadow-lg hover:border-accent/50 transition-all duration-300 border bg-card"
               >
-                <CardContent className="pt-8 pb-8 text-center">
-                  <div className="flex justify-center mb-4">
-                    <div className="p-3 rounded-full bg-accent/10 group-hover:bg-accent/20 transition-colors">
-                      <Icon className={`w-8 h-8 ${stat.color}`} />
+                <CardContent className="pt-6 pb-6 text-center">
+                  <div className="flex justify-center mb-3">
+                    <div className="p-2 rounded-full bg-accent/10 group-hover:bg-accent/20 transition-colors">
+                      <Icon className={`w-6 h-6 ${stat.color}`} />
                     </div>
                   </div>
-                  <div className="text-3xl md:text-4xl font-bold text-primary mb-3">
+                  <div className="text-2xl md:text-3xl font-bold text-primary mb-2">
                     {stat.value}
                   </div>
-                  <p className="text-sm text-muted-foreground font-medium leading-relaxed">
+                  <p className="text-sm text-muted-foreground leading-relaxed">
                     {stat.label}
                   </p>
                 </CardContent>

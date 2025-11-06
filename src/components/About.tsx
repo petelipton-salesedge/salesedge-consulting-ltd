@@ -3,11 +3,11 @@ import { Target, TrendingUp, Users } from "lucide-react";
 
 const About = () => {
   return (
-    <section id="about" className="py-20 px-4 bg-secondary/30">
+    <section id="about" className="py-12 px-4 bg-background">
       <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">Our Approach</h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Approach</h2>
+          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
             Deep expertise in SaaS revenue and go-to-market strategies
           </p>
         </div>

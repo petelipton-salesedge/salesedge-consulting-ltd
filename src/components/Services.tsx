@@ -26,11 +26,11 @@ const services = [
 
 const Services = () => {
   return (
-    <section id="services" className="py-20 px-4">
+    <section id="services" className="py-12 px-4 bg-secondary/30">
       <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">Services</h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">Services</h2>
+          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
             Comprehensive solutions to accelerate your SaaS growth journey
           </p>
         </div>

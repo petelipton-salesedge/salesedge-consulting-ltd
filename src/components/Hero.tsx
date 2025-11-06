@@ -9,7 +9,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative min-h-[90vh] flex items-center justify-center px-4 py-20 overflow-hidden">
+    <section className="relative min-h-[85vh] flex items-center justify-center px-4 py-16 overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-br from-primary via-primary/95 to-accent opacity-95" />
       <div 
         className="absolute inset-0 opacity-20 bg-cover bg-center mix-blend-overlay"
@@ -17,17 +17,19 @@ const Hero = () => {
       />
       <div className="absolute inset-0 bg-grid-white/[0.03] bg-[size:80px_80px]" />
       
-      <div className="relative z-10 max-w-6xl mx-auto text-center space-y-10">
+      <div className="relative z-10 max-w-6xl mx-auto text-center space-y-8">
         <div className="space-y-6 animate-fade-in">
-          <img 
-            src={logo} 
-            alt="Sales Edge Consulting" 
-            className="h-32 md:h-40 mx-auto mb-8 drop-shadow-2xl"
-          />
+          <div className="inline-block bg-white/10 backdrop-blur-sm rounded-2xl p-6 mb-6">
+            <img 
+              src={logo} 
+              alt="SalesEdge Consulting Ltd" 
+              className="h-24 md:h-28 mx-auto filter brightness-0 invert"
+            />
+          </div>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground leading-tight">
-            Sales Edge Consulting Limited
+            SalesEdge Consulting Ltd
           </h1>
-          <p className="text-xl md:text-2xl text-primary-foreground/95 max-w-3xl mx-auto leading-relaxed font-medium">
+          <p className="text-xl md:text-2xl text-primary-foreground/95 max-w-3xl mx-auto leading-relaxed">
             Driving Predictable Growth for Ambitious SaaS Companies
           </p>
         </div>
@@ -36,7 +38,7 @@ const Hero = () => {
           Fractional and advisory GTM leadership to help you scale from $1M to $10M+ ARR
         </p>
         
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-6 animate-fade-in-delay-2">
+        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4 animate-fade-in-delay-2">
           <Button 
             variant="accent" 
             size="lg" 

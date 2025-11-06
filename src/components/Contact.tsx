@@ -48,12 +48,12 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-20 px-4 bg-secondary/30">
+    <section id="contact" className="py-12 px-4 bg-background">
       <div className="max-w-4xl mx-auto">
-        <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">Let's Talk Growth</h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Let's discuss how Sales Edge Consulting can help you achieve your next stage of growth
+        <div className="text-center mb-10">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">Let's Talk Growth</h2>
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            Let's discuss how SalesEdge Consulting Ltd can help you achieve your next stage of growth
           </p>
         </div>
 
