@@ -1,5 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import logo from "@/assets/salesedge-logo.png";
+import heroBg from "@/assets/hero-bg.jpg";
 
 const Hero = () => {
   const scrollToContact = () => {
@@ -7,16 +9,25 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative min-h-[80vh] flex items-center justify-center px-4 py-20 overflow-hidden">
-      <div className="absolute inset-0 bg-[image:var(--gradient-hero)] opacity-95" />
-      <div className="absolute inset-0 bg-grid-white/[0.05] bg-[size:60px_60px]" />
+    <section className="relative min-h-[90vh] flex items-center justify-center px-4 py-20 overflow-hidden">
+      <div className="absolute inset-0 bg-gradient-to-br from-primary via-primary/95 to-accent opacity-95" />
+      <div 
+        className="absolute inset-0 opacity-20 bg-cover bg-center mix-blend-overlay"
+        style={{ backgroundImage: `url(${heroBg})` }}
+      />
+      <div className="absolute inset-0 bg-grid-white/[0.03] bg-[size:80px_80px]" />
       
-      <div className="relative z-10 max-w-5xl mx-auto text-center space-y-8">
-        <div className="space-y-4 animate-fade-in">
-          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-primary-foreground leading-tight">
+      <div className="relative z-10 max-w-6xl mx-auto text-center space-y-10">
+        <div className="space-y-6 animate-fade-in">
+          <img 
+            src={logo} 
+            alt="Sales Edge Consulting" 
+            className="h-32 md:h-40 mx-auto mb-8 drop-shadow-2xl"
+          />
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground leading-tight">
             Sales Edge Consulting Limited
           </h1>
-          <p className="text-xl md:text-2xl text-primary-foreground/90 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl md:text-2xl text-primary-foreground/95 max-w-3xl mx-auto leading-relaxed font-medium">
             Driving Predictable Growth for Ambitious SaaS Companies
           </p>
         </div>

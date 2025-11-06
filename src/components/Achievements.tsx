@@ -1,100 +1,88 @@
-import { useEffect, useRef, useState } from "react";
 import { Card, CardContent } from "@/components/ui/card";
-import { Trophy, TrendingUp, Target, CheckCircle } from "lucide-react";
+import { TrendingUp, Target, DollarSign, Users, Award, Zap } from "lucide-react";
 
 const stats = [
-  { value: 235, suffix: "%", label: "Uplift in New Sales Revenue" },
-  { value: 101, suffix: "%", label: "Increase in Total Contract Value" },
-  { value: 34, suffix: "pp", label: "Retention Improvement" },
-  { value: 18.5, suffix: "%", label: "Quarterly Pipeline Growth" },
+  { 
+    icon: DollarSign,
+    value: "$0 → $5M", 
+    label: "Built GTM motion, hired and scaled first sales teams",
+    color: "text-accent"
+  },
+  { 
+    icon: TrendingUp,
+    value: "$10M → $40M+", 
+    label: "Scaled revenue orgs, improved retention +34 pts",
+    color: "text-accent"
+  },
+  { 
+    icon: Target,
+    value: "+235%", 
+    label: "Growth in new-sales revenue",
+    color: "text-accent"
+  },
+  { 
+    icon: Zap,
+    value: "+101%", 
+    label: "Increase in TCV",
+    color: "text-accent"
+  },
+  { 
+    icon: Users,
+    value: "+5 pt", 
+    label: "Uplift in NDR",
+    color: "text-accent"
+  },
+  { 
+    icon: TrendingUp,
+    value: "+18.5%", 
+    label: "Increase in quarterly pipeline (79% outbound vs 20%)",
+    color: "text-accent"
+  },
+  { 
+    icon: Award,
+    value: "2", 
+    label: "Successful scale-up exits",
+    color: "text-accent"
+  },
 ];
-
-const highlights = [
-  "2 × successful exits, 1 × $bn Unicorn",
-  "Outbound pipeline increased from 20% to 79%",
-  "Consistently driven triple-digit ARR growth",
-  "Helped multiple SaaS companies scale to successful exits"
-];
-
-const AnimatedNumber = ({ value, suffix }: { value: number; suffix: string }) => {
-  const [count, setCount] = useState(0);
-  const [hasAnimated, setHasAnimated] = useState(false);
-  const ref = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting && !hasAnimated) {
-          setHasAnimated(true);
-          const duration = 2000;
-          const steps = 60;
-          const increment = value / steps;
-          let current = 0;
-
-          const timer = setInterval(() => {
-            current += increment;
-            if (current >= value) {
-              setCount(value);
-              clearInterval(timer);
-            } else {
-              setCount(current);
-            }
-          }, duration / steps);
-
-          return () => clearInterval(timer);
-        }
-      },
-      { threshold: 0.5 }
-    );
-
-    if (ref.current) {
-      observer.observe(ref.current);
-    }
-
-    return () => observer.disconnect();
-  }, [value, hasAnimated]);
-
-  return (
-    <div ref={ref} className="text-4xl md:text-5xl font-bold text-primary">
-      {Math.round(count * 10) / 10}{suffix}
-    </div>
-  );
-};
 
 const Achievements = () => {
   return (
-    <section id="achievements" className="py-20 px-4 bg-secondary/30">
-      <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-16">
-          <div className="inline-flex items-center gap-2 mb-4">
-            <Trophy className="w-8 h-8 text-accent" />
-            <h2 className="text-4xl md:text-5xl font-bold">Key Achievements</h2>
-          </div>
-          <p className="text-xl text-muted-foreground">
-            Proven track record of driving exceptional results
+    <section id="achievements" className="py-24 px-4 bg-gradient-to-b from-secondary/20 to-background">
+      <div className="max-w-7xl mx-auto">
+        <div className="text-center mb-16 animate-fade-in">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+            Key Achievements
+          </h2>
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            Proven track record of driving exceptional results and delivering measurable growth
           </p>
         </div>
 
-        <div className="grid md:grid-cols-4 gap-6 mb-12">
-          {stats.map((stat, index) => (
-            <Card key={index} className="text-center border-2 hover:border-accent/50 hover:shadow-lg transition-all">
-              <CardContent className="pt-8 pb-8">
-                <AnimatedNumber value={stat.value} suffix={stat.suffix} />
-                <p className="text-sm text-muted-foreground mt-2 font-medium">
-                  {stat.label}
-                </p>
-              </CardContent>
-            </Card>
-          ))}
-        </div>
-
-        <div className="grid md:grid-cols-2 gap-4">
-          {highlights.map((highlight, index) => (
-            <div key={index} className="flex items-start gap-3 p-4 rounded-lg bg-card border hover:border-primary/50 transition-all">
-              <CheckCircle className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
-              <p className="text-foreground font-medium">{highlight}</p>
-            </div>
-          ))}
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {stats.map((stat, index) => {
+            const Icon = stat.icon;
+            return (
+              <Card 
+                key={index} 
+                className="group hover:shadow-xl hover:scale-105 transition-all duration-300 border-2 hover:border-accent/50 bg-card/50 backdrop-blur"
+              >
+                <CardContent className="pt-8 pb-8 text-center">
+                  <div className="flex justify-center mb-4">
+                    <div className="p-3 rounded-full bg-accent/10 group-hover:bg-accent/20 transition-colors">
+                      <Icon className={`w-8 h-8 ${stat.color}`} />
+                    </div>
+                  </div>
+                  <div className="text-3xl md:text-4xl font-bold text-primary mb-3">
+                    {stat.value}
+                  </div>
+                  <p className="text-sm text-muted-foreground font-medium leading-relaxed">
+                    {stat.label}
+                  </p>
+                </CardContent>
+              </Card>
+            );
+          })}
         </div>
       </div>
     </section>
