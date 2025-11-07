@@ -48,7 +48,7 @@ const stats = [
 
 const Achievements = () => {
   return (
-    <section id="achievements" className="py-20 px-4 bg-gradient-to-b from-background to-secondary/20">
+    <section id="achievements" className="py-20 px-4 bg-gradient-to-b from-background to-secondary/20 relative overflow-hidden">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
@@ -60,7 +60,7 @@ const Achievements = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
           {stats.map((stat, index) => {
             const Icon = stat.icon;
             return (
@@ -69,14 +69,12 @@ const Achievements = () => {
                 className="group hover:shadow-xl hover:border-accent/50 transition-all duration-300 border-2 bg-gradient-to-br from-card to-card/50 backdrop-blur"
               >
                 <CardContent className="pt-8 pb-8 px-6">
-                  <div className="flex items-start gap-4">
-                    <div className="flex-shrink-0">
-                      <div className="p-3 rounded-xl bg-accent/10 group-hover:bg-accent/20 transition-colors">
-                        <Icon className={`w-8 h-8 ${stat.color}`} />
-                      </div>
+                  <div className="flex flex-col items-center text-center gap-4">
+                    <div className="p-4 rounded-xl bg-accent/10 group-hover:bg-accent/20 transition-colors">
+                      <Icon className={`w-10 h-10 ${stat.color}`} />
                     </div>
-                    <div className="flex-1 text-left">
-                      <div className="text-3xl md:text-4xl font-bold text-primary mb-2 font-display">
+                    <div>
+                      <div className="text-4xl md:text-5xl font-bold text-primary mb-3">
                         {stat.value}
                       </div>
                       <p className="text-base text-muted-foreground leading-relaxed">
