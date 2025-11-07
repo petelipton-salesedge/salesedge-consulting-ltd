@@ -19,14 +19,14 @@ const Hero = () => {
       
       <div className="relative z-10 max-w-6xl mx-auto text-center space-y-8">
         <div className="space-y-6 animate-fade-in">
-          <div className="inline-block bg-white/10 backdrop-blur-sm rounded-2xl p-6 mb-6">
+          <div className="inline-block mb-6">
             <img 
               src={logo} 
               alt="SalesEdge Consulting Ltd" 
-              className="h-24 md:h-28 mx-auto filter brightness-0 invert"
+              className="h-32 md:h-40 mx-auto drop-shadow-2xl"
             />
           </div>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground leading-tight">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground leading-tight font-display">
             SalesEdge Consulting Ltd
           </h1>
           <p className="text-xl md:text-2xl text-primary-foreground/95 max-w-3xl mx-auto leading-relaxed">

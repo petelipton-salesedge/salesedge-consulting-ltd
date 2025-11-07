@@ -48,37 +48,42 @@ const stats = [
 
 const Achievements = () => {
   return (
-    <section id="achievements" className="py-12 px-4 bg-secondary/30">
+    <section id="achievements" className="py-20 px-4 bg-gradient-to-b from-background to-secondary/20">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-12 animate-fade-in">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-foreground">
+        <div className="text-center mb-16 animate-fade-in">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
             Key Achievements
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <div className="w-24 h-1 bg-accent mx-auto mb-6"></div>
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Proven track record of driving exceptional results and delivering measurable growth
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
           {stats.map((stat, index) => {
             const Icon = stat.icon;
             return (
               <Card 
                 key={index} 
-                className="group hover:shadow-lg hover:border-accent/50 transition-all duration-300 border bg-card"
+                className="group hover:shadow-xl hover:border-accent/50 transition-all duration-300 border-2 bg-gradient-to-br from-card to-card/50 backdrop-blur"
               >
-                <CardContent className="pt-6 pb-6 text-center">
-                  <div className="flex justify-center mb-3">
-                    <div className="p-2 rounded-full bg-accent/10 group-hover:bg-accent/20 transition-colors">
-                      <Icon className={`w-6 h-6 ${stat.color}`} />
+                <CardContent className="pt-8 pb-8 px-6">
+                  <div className="flex items-start gap-4">
+                    <div className="flex-shrink-0">
+                      <div className="p-3 rounded-xl bg-accent/10 group-hover:bg-accent/20 transition-colors">
+                        <Icon className={`w-8 h-8 ${stat.color}`} />
+                      </div>
+                    </div>
+                    <div className="flex-1 text-left">
+                      <div className="text-3xl md:text-4xl font-bold text-primary mb-2 font-display">
+                        {stat.value}
+                      </div>
+                      <p className="text-base text-muted-foreground leading-relaxed">
+                        {stat.label}
+                      </p>
                     </div>
                   </div>
-                  <div className="text-2xl md:text-3xl font-bold text-primary mb-2">
-                    {stat.value}
-                  </div>
-                  <p className="text-sm text-muted-foreground leading-relaxed">
-                    {stat.label}
-                  </p>
                 </CardContent>
               </Card>
             );
