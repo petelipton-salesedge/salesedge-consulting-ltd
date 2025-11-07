@@ -27,21 +27,21 @@ const stats = [
     color: "text-accent"
   },
   { 
-    icon: Users,
-    value: "+5 pt", 
-    label: "Uplift in NDR",
+    icon: TrendingUp,
+    value: "+59%", 
+    label: "Increase outbound pipeline mix",
     color: "text-accent"
   },
   { 
-    icon: TrendingUp,
-    value: "+18.5%", 
-    label: "Increase in quarterly pipeline (79% outbound vs 20%)",
+    icon: Target,
+    value: "67%", 
+    label: "Close rate from qualified pipe",
     color: "text-accent"
   },
   { 
     icon: Award,
-    value: "2", 
-    label: "Successful scale-up exits",
+    value: "$1bn", 
+    label: "Exit",
     color: "text-accent"
   },
 ];
