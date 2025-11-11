@@ -19,7 +19,7 @@ const Hero = () => {
       
       <div className="relative z-10 max-w-6xl mx-auto text-center space-y-8">
         <div className="space-y-6 animate-fade-in">
-          <div className="inline-block mb-6">
+          <div className="inline-block mb-2">
             <img 
               src={logo} 
               alt="SalesEdge Consulting" 
