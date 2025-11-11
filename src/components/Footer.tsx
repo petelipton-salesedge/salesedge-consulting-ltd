@@ -40,8 +40,8 @@ const Footer = () => {
             <h4 className="font-semibold mb-4">Contact</h4>
             <p className="text-sm text-primary-foreground/80">
               Email:{" "}
-              <a href="mailto:contact@salesedge.consulting" className="hover:text-accent transition-colors">
-                contact@salesedge.consulting
+              <a href="mailto:contact@salesedgeconsulting.co.uk" className="hover:text-accent transition-colors">
+                contact@salesedgeconsulting.co.uk
               </a>
             </p>
           </div>
