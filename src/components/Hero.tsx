@@ -22,12 +22,12 @@ const Hero = () => {
           <div className="inline-block mb-6">
             <img 
               src={logo} 
-              alt="SalesEdge Consulting Ltd" 
+              alt="SalesEdge Consulting" 
               className="h-32 md:h-40 mx-auto drop-shadow-2xl"
             />
           </div>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground leading-tight font-display">
-            SalesEdge Consulting Ltd
+            SalesEdge Consulting
           </h1>
           <p className="text-xl md:text-2xl text-primary-foreground/95 max-w-3xl mx-auto leading-relaxed">
             Driving Predictable Growth for Ambitious SaaS Companies

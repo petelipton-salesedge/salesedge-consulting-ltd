@@ -4,7 +4,7 @@ const Footer = () => {
       <div className="max-w-6xl mx-auto">
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           <div>
-            <h3 className="text-xl font-bold mb-4">SalesEdge Consulting Ltd</h3>
+            <h3 className="text-xl font-bold mb-4">SalesEdge Consulting</h3>
             <p className="text-primary-foreground/80 text-sm">
               Driving predictable growth for ambitious SaaS companies through expert GTM leadership.
             </p>
@@ -48,7 +48,7 @@ const Footer = () => {
         </div>
         
         <div className="border-t border-primary-foreground/20 pt-8 text-center text-sm text-primary-foreground/60">
-          <p>&copy; {new Date().getFullYear()} SalesEdge Consulting Ltd. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} SalesEdge Consulting. All rights reserved.</p>
         </div>
       </div>
     </footer>
