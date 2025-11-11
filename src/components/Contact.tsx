@@ -65,8 +65,8 @@ const Contact = () => {
             <CardTitle className="text-2xl">Get In Touch</CardTitle>
             <CardDescription className="text-base">
               Fill out the form below or email us directly at{" "}
-              <a href="mailto:contact@salesedge.consulting" className="text-accent hover:underline">
-                contact@salesedge.consulting
+              <a href="mailto:contact@salesedgeconsulting.co.uk" className="text-accent hover:underline">
+                contact@salesedgeconsulting.co.uk
               </a>
             </CardDescription>
           </CardHeader>
