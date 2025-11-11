@@ -41,22 +41,22 @@ const Services = () => {
         </div>
 
         <div className="grid lg:grid-cols-3 gap-8 mb-12">
-        <div className="lg:col-span-1 space-y-6">
-          <div className="rounded-2xl overflow-hidden shadow-2xl h-64">
-            <img 
-              src={growthImage} 
-              alt="Business growth analytics and metrics" 
-              className="w-full h-full object-cover"
-            />
+          <div className="lg:col-span-1 space-y-6">
+            <div className="rounded-2xl overflow-hidden shadow-2xl">
+              <img 
+                src={growthImage} 
+                alt="Business growth analytics and metrics" 
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <div className="rounded-2xl overflow-hidden shadow-2xl hidden lg:block">
+              <img 
+                src={teamImage} 
+                alt="Professional sales team collaboration" 
+                className="w-full h-full object-cover"
+              />
+            </div>
           </div>
-          <div className="rounded-2xl overflow-hidden shadow-2xl h-64 hidden lg:block">
-            <img 
-              src={teamImage} 
-              alt="Professional sales team collaboration" 
-              className="w-full h-full object-cover"
-            />
-          </div>
-        </div>
 
           <div className="lg:col-span-2 grid md:grid-cols-2 gap-6">
             {services.map((service, index) => {
