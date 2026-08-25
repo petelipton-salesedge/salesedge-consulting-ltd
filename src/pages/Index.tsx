@@ -44,34 +44,10 @@ const factPairs = [
 ];
 
 const resultRows = [
-  {
-    role: "ROLE 01",
-    company: "Snyk",
-    subtitle: "Interim Sr. Sales Director, EMEA · 2025",
-    tag: "Net-new revenue, 6 mo.",
-    metric: "+235%",
-  },
-  {
-    role: "ROLE 02",
-    company: "Global App Testing",
-    subtitle: "Acting CRO · 2022-2025",
-    tag: "ARR, $7.8M → $11.2M",
-    metric: "+43%",
-  },
-  {
-    role: "ROLE 03",
-    company: "JDX Consulting",
-    subtitle: "Director / Global Head of Sales · 2020-2022",
-    tag: "Managed-service margin",
-    metric: "12%→84%",
-  },
-  {
-    role: "ROLE 04",
-    company: "Shape Security",
-    subtitle: "Sales Director, EMEA · 2019-2020",
-    tag: "Personal net-new ARR",
-    metric: "£1.3M",
-  },
+  { company: "Snyk", metric: "+235%" },
+  { company: "Global App Testing", metric: "+43%" },
+  { company: "JDX Consulting", metric: "12%→84%" },
+  { company: "Shape Security", metric: "£1.3M" },
 ];
 
 const careerNames = [
