@@ -14,15 +14,19 @@ export default {
     },
     extend: {
       fontFamily: {
-        'display': ['Playfair Display', 'serif'],
-        'sans': ['Inter', 'system-ui', 'sans-serif'],
+        display: ["Fraunces", "Georgia", "serif"],
+        sans: ["IBM Plex Sans", "system-ui", "sans-serif"],
+        mono: ["IBM Plex Mono", "ui-monospace", "monospace"],
       },
       colors: {
         border: "hsl(var(--border))",
+        "border-dark": "hsl(var(--border-dark))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
+        navy: "hsl(var(--navy))",
+        "logo-muted": "hsl(var(--logo-muted))",
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
@@ -42,6 +46,8 @@ export default {
         accent: {
           DEFAULT: "hsl(var(--accent))",
           foreground: "hsl(var(--accent-foreground))",
+          bright: "hsl(var(--accent-bright))",
+          "bright-foreground": "hsl(var(--accent-bright-foreground))",
         },
         popover: {
           DEFAULT: "hsl(var(--popover))",
@@ -64,8 +70,8 @@ export default {
       },
       borderRadius: {
         lg: "var(--radius)",
-        md: "calc(var(--radius) - 2px)",
-        sm: "calc(var(--radius) - 4px)",
+        md: "calc(var(--radius) - 1px)",
+        sm: "calc(var(--radius) - 1px)",
       },
       keyframes: {
         "accordion-down": {
