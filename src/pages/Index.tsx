@@ -44,34 +44,10 @@ const factPairs = [
 ];
 
 const resultRows = [
-  {
-    role: "ROLE 01",
-    company: "Snyk",
-    subtitle: "Interim Sr. Sales Director, EMEA · 2025",
-    tag: "Net-new revenue, 6 mo.",
-    metric: "+235%",
-  },
-  {
-    role: "ROLE 02",
-    company: "Global App Testing",
-    subtitle: "Acting CRO · 2022-2025",
-    tag: "ARR, $7.8M → $11.2M",
-    metric: "+43%",
-  },
-  {
-    role: "ROLE 03",
-    company: "JDX Consulting",
-    subtitle: "Director / Global Head of Sales · 2020-2022",
-    tag: "Managed-service margin",
-    metric: "12%→84%",
-  },
-  {
-    role: "ROLE 04",
-    company: "Shape Security",
-    subtitle: "Sales Director, EMEA · 2019-2020",
-    tag: "Personal net-new ARR",
-    metric: "£1.3M",
-  },
+  { company: "Snyk", metric: "+235%" },
+  { company: "Global App Testing", metric: "+43%" },
+  { company: "JDX Consulting", metric: "12%→84%" },
+  { company: "Shape Security", metric: "£1.3M" },
 ];
 
 const careerNames = [
@@ -288,14 +264,9 @@ const Index = () => {
 
             <div className="mt-12 border-t border-border">
               {resultRows.map((row) => (
-                <article key={row.role} className="grid gap-5 border-b border-border py-7 md:grid-cols-[0.45fr_1.25fr_0.85fr_0.55fr] md:items-center">
-                  <p className="font-mono text-xs font-medium uppercase tracking-[0.18em] text-accent">{row.role}</p>
-                  <div>
-                    <h3 className="font-display text-3xl font-light text-foreground md:text-4xl">{row.company}</h3>
-                    <p className="mt-2 text-sm leading-6 text-muted-foreground">{row.subtitle}</p>
-                  </div>
-                  <p className="font-mono text-xs uppercase tracking-wider text-muted-foreground md:text-right">{row.tag}</p>
-                  <p className="font-mono text-3xl font-medium tracking-normal text-foreground md:text-right md:text-4xl">{row.metric}</p>
+                <article key={row.company} className="flex items-center justify-between gap-6 border-b border-border py-7">
+                  <h3 className="font-display text-3xl font-light text-foreground md:text-4xl">{row.company}</h3>
+                  <p className="font-mono text-3xl font-medium tracking-normal text-foreground md:text-4xl">{row.metric}</p>
                 </article>
               ))}
             </div>
