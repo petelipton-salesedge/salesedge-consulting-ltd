@@ -213,7 +213,7 @@ const Index = () => {
               <figure className="max-w-[220px]">
                 <div className="border border-accent p-2">
                   <img
-                    src={headshotAsset.url}
+                    src={headshot}
                     alt="Peter Lipton, Fractional CRO at SalesEdge Consulting"
                     width={1024}
                     height={1024}
