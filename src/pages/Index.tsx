@@ -264,14 +264,9 @@ const Index = () => {
 
             <div className="mt-12 border-t border-border">
               {resultRows.map((row) => (
-                <article key={row.role} className="grid gap-5 border-b border-border py-7 md:grid-cols-[0.45fr_1.25fr_0.85fr_0.55fr] md:items-center">
-                  <p className="font-mono text-xs font-medium uppercase tracking-[0.18em] text-accent">{row.role}</p>
-                  <div>
-                    <h3 className="font-display text-3xl font-light text-foreground md:text-4xl">{row.company}</h3>
-                    <p className="mt-2 text-sm leading-6 text-muted-foreground">{row.subtitle}</p>
-                  </div>
-                  <p className="font-mono text-xs uppercase tracking-wider text-muted-foreground md:text-right">{row.tag}</p>
-                  <p className="font-mono text-3xl font-medium tracking-normal text-foreground md:text-right md:text-4xl">{row.metric}</p>
+                <article key={row.company} className="flex items-center justify-between gap-6 border-b border-border py-7">
+                  <h3 className="font-display text-3xl font-light text-foreground md:text-4xl">{row.company}</h3>
+                  <p className="font-mono text-3xl font-medium tracking-normal text-foreground md:text-4xl">{row.metric}</p>
                 </article>
               ))}
             </div>
