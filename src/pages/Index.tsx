@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
-import headshot from "@/assets/peter-headshot-placeholder.jpg";
+import headshot from "@/assets/peter-headshot.jpg";
 
 const ledgerStats = [
   {
@@ -214,7 +214,7 @@ const Index = () => {
                 <div className="border border-accent p-2">
                   <img
                     src={headshot}
-                    alt="Professional headshot placeholder for SalesEdge Consulting"
+                    alt="Peter Lipton, Fractional CRO at SalesEdge Consulting"
                     width={1024}
                     height={1024}
                     className="aspect-square w-full object-cover grayscale contrast-125"
