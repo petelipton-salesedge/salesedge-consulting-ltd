@@ -164,7 +164,7 @@ const Index = () => {
     <div className="min-h-screen bg-background text-foreground">
       <header className="sticky top-0 z-50 border-b border-border bg-background/85 backdrop-blur-md">
         <nav className="mx-auto flex max-w-7xl items-center justify-between gap-6 px-5 py-4 lg:px-8" aria-label="Primary navigation">
-          <a href="#top" className="group font-mono text-sm font-medium uppercase tracking-wider focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background">
+          <a href="#top" className="group font-mono text-sm font-medium tracking-wider focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background">
             <span className="text-accent" aria-hidden="true">＋</span>
             <span>SalesEdge</span>
           </a>
@@ -173,13 +173,13 @@ const Index = () => {
               <a
                 key={item.href}
                 href={item.href}
-                className="font-mono text-xs font-medium uppercase tracking-wider text-muted-foreground transition-colors hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
+                className="font-mono text-xs font-medium tracking-wider text-muted-foreground transition-colors hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
               >
                 {item.label}
               </a>
             ))}
           </div>
-          <Button asChild variant="outline" className="h-10 border-primary bg-transparent px-4 font-mono text-xs uppercase tracking-wider text-primary hover:bg-primary hover:text-primary-foreground">
+          <Button asChild variant="outline" className="h-10 border-primary bg-transparent px-4 font-mono text-xs tracking-wider text-primary hover:bg-primary hover:text-primary-foreground">
             <a href="#contact">Book a Call</a>
           </Button>
         </nav>
@@ -356,7 +356,7 @@ const Index = () => {
               </p>
               <a
                 href="mailto:contact@salesedgeconsulting.co.uk"
-                className="mt-10 flex max-w-xl items-center justify-between border-y border-border-dark py-5 font-mono text-sm uppercase tracking-wider text-primary-foreground transition-colors hover:text-accent-bright focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-bright focus-visible:ring-offset-2 focus-visible:ring-offset-primary"
+                className="mt-10 flex max-w-xl flex-col gap-3 border-y border-border-dark py-5 font-mono text-sm uppercase tracking-wider text-primary-foreground transition-colors hover:text-accent-bright focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-bright focus-visible:ring-offset-2 focus-visible:ring-offset-primary sm:flex-row sm:items-center sm:justify-between"
               >
                 <span>Email directly</span>
                 <span>contact@salesedgeconsulting.co.uk →</span>
