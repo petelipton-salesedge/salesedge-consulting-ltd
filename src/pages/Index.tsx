@@ -147,9 +147,8 @@ const Index = () => {
     <div className="min-h-screen bg-background text-foreground">
       <header className="sticky top-0 z-50 border-b border-border bg-background/85 backdrop-blur-md">
         <nav className="mx-auto flex max-w-7xl items-center justify-between gap-6 px-5 py-4 lg:px-8" aria-label="Primary navigation">
-          <a href="#top" className="group font-mono text-sm font-medium tracking-wider focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background">
-            <span className="text-accent" aria-hidden="true">＋</span>
-            <span>SalesEdge</span>
+          <a href="#top" className="group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background">
+            <img src={logo} alt="SalesEdge Consulting" className="h-10 w-auto object-contain" />
           </a>
           <div className="hidden items-center gap-8 md:flex">
             {navItems.map((item) => (
