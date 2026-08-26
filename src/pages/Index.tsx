@@ -88,6 +88,12 @@ const services = [
       "Rebuilding outbound and revenue-ops workflows around AI tooling - more qualified pipeline per rep, without adding headcount.",
     format: "PROJECT-BASED",
   },
+  {
+    title: "Advisory & Founder Coaching",
+    description:
+      "On-demand sounding board for founders and leadership teams - GTM decisions, board prep, fundraising narrative, and commercial strategy, available by the hour or day.",
+    format: "BY THE HOUR / DAY",
+  },
 ];
 
 const navItems = [
