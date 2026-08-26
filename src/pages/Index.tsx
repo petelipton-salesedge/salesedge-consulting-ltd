@@ -88,6 +88,12 @@ const services = [
       "Rebuilding outbound and revenue-ops workflows around AI tooling - more qualified pipeline per rep, without adding headcount.",
     format: "PROJECT-BASED",
   },
+  {
+    title: "Advisory & Founder Coaching",
+    description:
+      "On-demand sounding board for founders and leadership teams - GTM decisions, board prep, fundraising narrative, and commercial strategy, available by the hour or day.",
+    format: "BY THE HOUR / DAY",
+  },
 ];
 
 const navItems = [
@@ -300,9 +306,9 @@ const Index = () => {
           <div className="mx-auto max-w-7xl px-5 py-16 md:py-20 lg:px-8">
             <p className="font-mono text-xs font-medium uppercase tracking-[0.2em] text-accent">SERVICES</p>
             <div className="mt-5 grid gap-5 lg:grid-cols-[0.75fr_1fr] lg:items-end">
-              <h2 className="font-display text-4xl font-light leading-tight text-foreground md:text-6xl">Four ways to engage.</h2>
+              <h2 className="font-display text-4xl font-light leading-tight text-foreground md:text-6xl">Five ways to engage.</h2>
               <p className="max-w-2xl text-lg leading-8 text-muted-foreground lg:justify-self-end">
-                Comprehensive GTM support tailored to your growth stage - scoped as a retainer, not a project.
+                Comprehensive GTM support tailored to your growth stage - from advisory calls to embedded retainers.
               </p>
             </div>
             <div className="mt-12 border-t border-border">
